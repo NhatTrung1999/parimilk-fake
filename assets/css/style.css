@@ -1,0 +1,531 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Futura";
+}
+
+#header-menu {
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    transition: all 1s;
+    background: #fff;
+}
+
+#header-menu.center-logo a.navbar-brand {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 120px;
+    height: 90px;
+    max-height: 90px;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
+#header-menu.center-logo a.navbar-brand img {
+    object-fit: contain;
+    height: 100% !important;
+}
+
+#header-menu a.navbar-brand {
+    max-height: 90px;
+}
+
+#header-menu .navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+    min-height: 90px;
+}
+
+#header-menu.center-logo li.nav-item {
+    padding: 0;
+    flex-grow: 1;
+}
+
+#header-menu li.nav-item {
+    position: relative;
+    display: flex;
+    padding: 0;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    transition: all 1s;
+}
+
+#header-menu li.nav-item .nav-link {
+    font-size: 12px;
+    font-weight: 700;
+    color: #292c7e;
+    max-width: 120px;
+    padding: 8px 23.6px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+#header-menu.center-logo li.nav-item:nth-child(1) .nav-link {
+    padding: 8px 14px;
+}
+
+#header-menu.center-logo li.nav-item .nav-link {
+    font-size: 14px;
+    padding: 8px 18.6px;
+}
+
+#header-menu li.nav-item:nth-child(1) .nav-link {
+    padding: 8px 20px;
+}
+
+#header-menu li.nav-item.menu-item-has-children ul.navbar-nav {
+    position: absolute;
+    padding: 10px 20px;
+    background: white;
+    height: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 1s;
+    top: 100%;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    display: none;
+    min-width: 265px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+#header-menu .navbar-nav .nav-item.menu-item-has-children li.nav-item {
+    flex-basis: 100%;
+    text-align: center;
+    height: auto;
+    display: block;
+    border-color: transparent;
+}
+
+#header-menu .navbar-nav .nav-item.menu-item-has-children li.nav-item .nav-link {
+    color: #292c7e;
+    max-width: 100%;
+    border-color: transparent
+}
+
+#header-menu .dropdown-menu form {
+    width: auto;
+}
+
+#header-menu .dropdown-menu form .bi.bi-search {
+    font-size: 16px;
+}
+
+#header-menu li.nav-item.dropdown {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+a {
+    outline: none;
+    color: #292c7e;
+}
+
+.input-group {
+    min-width: 260px;
+}
+
+.input-group input.form-control {
+    border-right: none;
+}
+
+input,
+textarea,
+.form-control {
+    font-family: "Cabin";
+    border-radius: 20px;
+    box-shadow: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.input-group>.input-group-append>.input-group-text {
+    background: #fff;
+    border-left: none;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    outline: none;
+}
+
+/* About us */
+section {
+    padding: 70px 0;
+}
+
+.title {
+    font-family: "Futura";
+    font-size: 48px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    color: #292c7e;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+}
+
+.about-us {
+    background-image: url(/themes/nutifood/images/home/aboutus.png);
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: right;
+    min-height: 700px;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 20vh;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.about-us .content-about {
+    max-width: 800px;
+}
+
+/* Vision */
+.vision {
+    background-image: linear-gradient(to bottom, #def0fa, #addbf2, #ffffff);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    position: relative;
+    padding-bottom: 250px;
+    padding-top: 200px;
+}
+
+.list-check-icon {
+    margin: 0;
+    margin-top: 32px;
+    padding: 0;
+    list-style: none;
+}
+
+.list-check-icon .item {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.list-check-icon i {
+    margin-right: 18px;
+    font-size: 20x;
+    color: #292c7e;
+}
+
+.list-check-icon li+li {
+    margin-top: 18px;
+}
+
+.vision-link {
+    text-decoration: none;
+}
+
+.img-cg {
+    transform: translateY(-20px);
+}
+
+/* List Product For Old */
+.product-for-old {
+    background-image: url(/themes/nutifood/images/home/group6.jpg);
+    background-size: 100%;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+.product-for-old .list-cate {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: 100%;
+}
+
+.product-for-old .nav-tabs {
+    border: none;
+    flex-wrap: nowrap;
+}
+
+.product-for-old .nav-tabs .nav-item {
+    margin: 0 !important;
+}
+
+.product-for-old li.nav-item.item.waves-effect.waves-light {
+    outline: none;
+}
+
+.product-for-old .list-cate .item:nth-child(2n+1) {
+    transform: translateY(0%);
+}
+
+.product-for-old .list-cate .item {
+    text-align: center;
+    position: relative;
+}
+
+.product-for-old .nav-tabs .nav-item .nav-link.active,
+.product-for-old .nav-tabs .nav-item .nav-link:hover {
+    background-image: url(/themes/nutifood/images/milk.png);
+    background-size: contain;
+}
+
+.product-for-old .nav-tabs .nav-link,
+.product-for-old .nav-tabs .nav-link.active,
+.product-for-old .nav-tabs .nav-item.show .nav-link,
+.product-for-old .nav-tabs .nav-link:hover,
+.product-for-old .nav-tabs .nav-link:focus {
+    background: transparent;
+    border: none !important;
+    padding: 0;
+}
+
+.product-for-old .list-cate .title-small {
+    padding-left: 25px;
+}
+
+.title-small {
+    font-family: "Futura";
+    font-size: 18px;
+    font-weight: bold;
+    color: #292c7e;
+}
+
+.product-for-old .list-product {
+    padding-top: 110px;
+}
+
+
+
+/* List post */
+.list-post {
+    margin-top: 120px;
+}
+
+.slide-component {
+    margin: 0 45px;
+}
+
+.slide-component .wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.slide-component .container {
+    border-radius: 40px;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 7%);
+    background-color: #fff;
+    padding: 15px;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slide-component button.slick-arrow {
+    width: 32px;
+    height: 32px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.slide-component .slick-prev {
+    left: -44px;
+}
+
+.slide-component .slick-next {
+    right: -44px;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-next {
+    right: -25px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide-component .item {
+    font-family: "Cabin";
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    outline: none;
+}
+
+.slide-component .slick-slide {
+    margin: 15px 15px 0;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slide-component .item .img-bg-product {
+    padding-top: 100%;
+    background-size: 65%;
+    background-position: center;
+    background-color: #e9f5fb;
+    border-radius: 30px;
+}
+
+.css-list-post .img-bg-product {
+    background-size: 100% !important;
+}
+
+
+.slide-component .item .name-product {
+    color: #292c7e;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 6px;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    padding-top: 0px;
+    background-image: url(/themes/nutifood/images/home/rounded-shape-1.png);
+}
+
+footer .container {
+    padding-top: 20px;
+    padding-bottom: 30px;   
+}
+
+footer .item-footer {
+    margin-top: 20px;
+}
+
+footer a.logo-footer {
+    display: block;
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    color: #000f9f;
+    font-family: "Cabin";
+    font-weight: normal;
+    text-align: left;
+}
+
+footer * {
+    color: #454545;
+}
+
+footer .bootom-fotter {
+    background-color: #e8f5fd;
+    min-height: 70px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+footer .bootom-fotter .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+footer .bootom-fotter * {
+    color: #292c7e;
+    font-family: "Cabin";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer .bootom-fotter .social a {
+    margin-left: 22px;
+}
+
+footer .bootom-fotter .social img {
+    width: 30px;
+}
+
+footer .bootom-fotter .social a + a {
+    margin-left: 5px;
+}
